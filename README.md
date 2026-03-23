@@ -8,19 +8,17 @@ Ocean Alkalinity Enhancement (OAE) is a promising marine carbon dioxide removal 
 
 This project explores whether Physics-Informed Neural Networks (PINNs) can act as fast, accurate emulators of tracer transport governed by advection–diffusion dynamics.
 
----
-
 ## 🧠 Core Idea
 
 We model tracer evolution using the advection–diffusion equation:
 
+```
 ∂C/∂t = D(∂²C/∂x² + ∂²C/∂y²) − u ∂C/∂x − v ∂C/∂y + S(x, y, t)
+```
 
 A neural network is trained to:
 - Fit simulation data (Oceananigans output)
 - Respect underlying physics via PDE-based loss terms
-
----
 
 ## 📊 Experiments
 
@@ -40,10 +38,10 @@ A neural network is trained to:
 - Evaluate rollout performance
 - Analyze error accumulation
 
----
 
 ## 📁 Repository Structure
 
+```
 .
 ├── notebooks/
 │   ├── 01_oceananigans_single_realization.ipynb
@@ -52,8 +50,7 @@ A neural network is trained to:
 │   └── 04_single_step_vs_multi_step.ipynb
 ├── README.md
 ├── LICENSE
-
----
+```
 
 ## ⚙️ Methods
 
@@ -64,21 +61,15 @@ A neural network is trained to:
   - Physics loss (PDE)
   - (Optional) mass conservation  
 
----
-
 ## 📈 Key Questions
 
 - Can PINNs emulate tracer transport?
 - Do physics constraints improve generalization?
 - How does error evolve in multi-step forecasts?
 
----
-
 ## 🔬 Climate Relevance
 
 OAE efficiency depends on ocean transport and CO₂ exchange. Models are essential but expensive. This work explores fast ML-based emulators for climate-relevant simulations.
-
----
 
 ## 🚀 Future Work
 
@@ -87,16 +78,7 @@ OAE efficiency depends on ocean transport and CO₂ exchange. Models are essenti
 - Extend to biogeochemistry  
 - Add uncertainty quantification  
 
----
-
-## 👩‍🔬 Author
+## Author
 
 Kavya Agarwal  
 Yale University — Earth & Planetary Sciences  
-
----
-
-## 📌 Status
-
-Active research project (Master’s thesis)
-
